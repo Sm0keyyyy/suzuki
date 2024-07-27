@@ -1,0 +1,223 @@
+*,html,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+nav#nav .menu.show {
+    display: block;
+  }
+
+/* style.css */
+nav#nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+    transition: all 0.3s ease;
+  }
+  
+  nav#nav .logo {
+    margin-right: 1rem;
+  }
+  
+  nav#nav .logo img {
+    width: 100px;
+    height: 50px;
+    object-fit: contain;
+  }
+  
+  nav#nav .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav#nav .menu a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 1rem;
+    transition: color 0.2s ease;
+  }
+  
+  nav#nav .menu a:hover {
+    color: #ccc;
+  }
+  
+  nav#nav .toggle-menu {
+    display: none;
+    cursor: pointer;
+  }
+  
+  nav#nav .toggle-menu .burger {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin-bottom: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  nav#nav .toggle-menu .burger:nth-child(2) {
+    width: 20px;
+  }
+  
+  /* Responsive design */
+  @media only screen and (max-width: 768px) {
+    nav#nav {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0.5rem;
+    }
+  
+    nav#nav .menu {
+      display: none;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0.5rem;
+      background-color: #333;
+      position: absolute;
+      top: 3.5rem;
+      left: 0;
+      width: 100%;
+      border-top: 1px solid #444;
+    }
+  
+    nav#nav .menu.show {
+      display: flex;
+    }
+  
+    nav#nav .menu a {
+      padding: 0.5rem;
+      border-bottom: 1px solid #444;
+    }
+  
+    nav#nav .toggle-menu {
+      display: block;
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+    }
+  
+    nav#nav .toggle-menu .burger {
+      background-color: #fff;
+    }
+  
+    nav#nav .toggle-menu .burger:nth-child(2) {
+      width: 30px;
+    }
+  }
+  
+  /* Burger menu animation */
+  nav#nav .toggle-menu.active .burger:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  
+  nav#nav .toggle-menu.active .burger:nth-child(2) {
+    opacity: 0;
+  }
+  
+  nav#nav .toggle-menu.active .burger:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+
+/* carousel */
+  
+.carousel-item img {
+    height: 100vh; /* Set tinggi gambar sama dengan tinggi viewport */
+    object-fit: cover; /* Make gambar cover seluruh kontainer */
+    margin: 0 auto; /* Tambahkan margin horizontal untuk center gambar */
+    display: block; /* Jadikan gambar sebagai elemen block */
+  }
+
+  .carousel-inner {
+    position: relative; /* Posisi relatif untuk kontainer */
+  }
+  
+  .carousel-inner::before {
+    content: ''; /* Konten kosong untuk pseudo-element */
+    position: absolute; /* Posisi absolut untuk pseudo-element */
+    bottom: 0; /* Posisi bawah untuk pseudo-element */
+    left: 0; /* Posisi kiri untuk pseudo-element */
+    width: 100%; /* Lebar pseudo-element */
+    height: 200px; /* Tinggi pseudo-element */
+    background: linear-gradient(to bottom, #333, #555); /* Gradient abu-abu */
+    background-size: 100% 100%; /* Ukuran background */
+    background-position: center; /* Posisi background */
+    background-repeat: no-repeat; /* Jangan ulangi background */
+    border-radius: 50% 50% 0 0; /* Bentuk waves */
+    transform: scaleX(1.5); /* Skala pseudo-element */
+  }
+
+  @media (max-width: 768px) {
+    .carousel-inner::before {
+       height: 15vh; /* Tinggi pseudo-element relatif terhadap viewport untuk layar kecil */
+     }
+   }
+   
+   @media (max-width: 480px) {
+    .carousel-inner::before {
+       height: 10vh; /* Tinggi pseudo-element relatif terhadap viewport untuk layar sangat kecil */
+     }
+   }
+  
+  /* Media query untuk layar kecil (max-width: 768px) */
+  @media (max-width: 768px) {
+    .carousel-item img {
+      height: 50vh; /* Kurangi tinggi gambar pada layar kecil */
+    }
+  }
+  
+  /* Media query untuk layar sangat kecil (max-width: 480px) */
+  @media (max-width: 480px) {
+    .carousel-item img {
+      height: 30vh; /* Kurangi tinggi gambar pada layar sangat kecil */
+    }
+  }
+
+  /* intro */
+#intro {
+    background-color: #f7f7f7;
+    padding: 50px 0;
+  }
+  
+  #intro.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  #intro h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  #intro p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  #intro button {
+    background-color: #337ab7;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  #intro button:hover {
+    background-color: #23527c;
+  }
+  
+  #intro img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
