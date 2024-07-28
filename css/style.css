@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
+    
 }
 
 nav#nav .menu.show {
@@ -221,3 +222,109 @@ nav#nav {
     object-fit: cover;
     border-radius: 10px;
   }
+
+/* Daftar Mobil Section */
+#daftar-mobil {
+  padding: 50px 0;
+  background-color: #f7f7f7;
+}
+
+#daftar-mobil .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+#daftar-mobil .card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+#daftar-mobil .card img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#daftar-mobil .card-body {
+  padding: 20px;
+}
+
+#daftar-mobil .card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#daftar-mobil .card-text {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+#daftar-mobil .btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#daftar-mobil .btn:hover {
+  background-color: #0056b3;
+}
+
+#daftar-mobil .card {
+  transform: scale(0.8);
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+#daftar-mobil .card.hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+#daftar-mobil .card.animate {
+  transform: scale(1);
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+}
+
+#daftar-mobil .card.animate.hover {
+  transform: translateY(-10px) scale(1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+/* modal */
+.modal-body ul li {
+  list-style: none;
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}
+
+.modal-body ul li i {
+  margin-right: 8px;
+  color: #007bff; /* Sesuaikan dengan warna tema Anda */
+}
+
+.modal-body h5 {
+  margin-bottom: 20px;
+  color: #0056b3;
+}
+
+.btn-close {
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+}
+
+.modal-header, .modal-footer {
+  border: none;
+}
+
