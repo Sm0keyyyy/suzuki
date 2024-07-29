@@ -302,7 +302,7 @@ nav#nav {
 }
 
 /* modal */
-.modal-body ul li {
+/* .modal-body ul li {
   list-style: none;
   margin-bottom: 10px;
   font-size: 1.1em;
@@ -310,7 +310,7 @@ nav#nav {
 
 .modal-body ul li i {
   margin-right: 8px;
-  color: #007bff; /* Sesuaikan dengan warna tema Anda */
+  color: #007bff; 
 }
 
 .modal-body h5 {
@@ -326,5 +326,6 @@ nav#nav {
 
 .modal-header, .modal-footer {
   border: none;
-}
+} */
+
 
